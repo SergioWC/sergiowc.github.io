@@ -1,0 +1,263 @@
+header{
+    margin: 50px;
+    position:sticky;
+    top: 80px;
+    display: inline-flexbox;
+    z-index: 1;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(IDG-fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+section#presentacion{
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+p{
+    color: white;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+}
+h4#neg-sub{
+    color: white;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+h2#h2-deco{
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+section#educacion{
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin: 30px;
+    font-weight: bolder;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#experiencia{
+    border-style: solid;
+    border-radius: 20px;
+    margin: auto;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#contacto{
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 10px;
+}
+.trabajos-realizados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.trabajo{
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 300px;
+    margin: 20px;
+}
+img{
+    transform: scale(0.9);
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    padding-top: 10px;
+}
+img:hover{
+    transform: scale(1.8);
+    transition: all 0.5s linear;
+}
+.reseña{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+.barra-nav{
+    background: rgba(146, 52, 52, 0.877);
+    display: inline-block;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+nav{
+    border-style: blue;
+    border-radius: 20px;
+    background: lightcoral;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.boton-nav{
+    background: rgba(255, 0, 0, 0.63);
+    color: rgb(204, 238, 14);
+    font-size: 30px;
+    padding: 2px 0;
+    border: none;
+    border-radius: 2px;
+    display: none;
+}
+a{
+    font-size: x-large;
+    text-decoration: none;
+}
+@media (max-width: 500px){
+    nav{
+        background: rgba(64, 109, 168, 0.514);
+        flex-direction: column;
+    }
+    .barra-nav{
+        margin: 20px;
+    }
+    .boton-nav{
+        display: inline-block;
+    }
+    .ocultar{
+        display: none;
+    }
+
+}
+seccion#comunicacion{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px white;
+}
+section#com{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin: 10px;
+}
+
+section#contact{
+    box-sizing: border-box;
+}
+
+.container{
+
+    max-width: 90%;
+    margin: auto;
+}
+h2#h2-contact{
+    color: azure;
+    font-family: sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    letter-spacing: 3px;
+}
+label{
+    color: aliceblue;
+}
+.mensaje{
+    color: aliceblue;
+}
+.form {
+    border-top: 4px solid rgba(54, 121, 163, 0.822);
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 50px ;
+    margin-top: 10px;
+    background: rgba(97, 166, 206, 0.575);
+}
+.form-input{
+    margin-bottom: 20px;
+}
+.form-input label{
+    display: block;
+    color: rgba(20, 20, 53, 0.87);
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.form-input input{
+    width: 100%;
+    height: 30px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid rgba(20, 20, 53, 0.5);
+}
+.form-input input:focus + label{
+    font-weight: bolder;
+    color: black;
+}
+[type="checkbox"]{
+    display: none;
+}
+
+[type="checkbox"]:checked+label::before{
+    background: rgba(24, 170, 90, 0.699);
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+[type="checkbox"]:checked+label{
+    color: rgba(23, 214, 87, 0.918);
+    font-weight: bolder;
+}
+
+.termsAndConditions{
+    margin-left: 25px;
+    position:relative;   
+}
+.termsAndConditions label::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(15, 207, 63);
+    position: absolute;
+    left:-25px;
+    margin-top: 6px;
+}
+.boton-enviar input{
+    background: rgba(36, 36, 192, 0.651);
+    color: aliceblue;
+    padding: 20px 40px;
+    font-size: 20px;
+    align-items: center;
+    display: block;
+    margin: auto;
+    border: none;
+}
+.boton-enviar input:hover{
+    background: rgba(24, 146, 75, 0.747);
+    transition: 0.5s;
+}
+.boton-enviar{
+    margin-top: 40px;
+}
+.comentario{
+    width: 300px;
+    margin: auto;
+}
